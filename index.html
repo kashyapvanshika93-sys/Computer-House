@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer House</title>
+    <style>
+        /* ================= GENERAL STYLING ================= */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background-color: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ================= HEADER ================= */
+        header{
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: #fff;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo{
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .nav-links a{
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover{
+            color: #ffcc00;
+        }
+
+        /* ================= HERO SECTION ================= */
+        .hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') center/cover no-repeat;}
+
+        .hero h1{
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p{
+            font-size: 20px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        section{padding:60px 40px}.section-title{text-align:center;margin-bottom:40px}.section-title h2{font-size:34px;color:#1e3c72}.hero-sub{font-size:22px;margin-top:10px}.hero-text{margin-top:18px;max-width:720px;margin-inline:auto}
+
+        /* ================= ABOUT ================= */
+        .about{
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* ================= SERVICES ================= */
+        .services{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card{
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover{
+            transform: translateY(-8px);
+        }
+
+        .service-card h3{
+            margin-bottom: 10px;
+            color: #2a5298;
+        }
+
+        /* ================= GALLERY ================= */
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img{
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover{
+            transform: scale(1.05);
+        }
+
+        /* ================= CONTACT ================= */
+        .contact{
+            max-width: 700px;
+            margin: auto;
+        }
+
+        form input, form textarea{
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button{
+            background: #1e3c72;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form button:hover{
+            background: #2a5298;
+        }
+
+        /* ================= FOOTER ================= */
+        footer{
+            background: #1e3c72;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Computer House</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Computer House</h1>
+            <p class="hero-sub">Building Digital Skills, Smart Minds & Future‑Ready Professionals</p><p class="hero-text">A trusted hub for computer education, coding, and smart digital solutions for students.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="section-title">
+            <h2>About Us</h2>
+        </div>
+        <div class="about">
+            <p>
+                <strong>Computer House</strong> is a modern computer education and service center dedicated to spreading digital literacy 
+                and providing reliable technical solutions. Established with the vision of empowering students and individuals, 
+                we focus on practical learning, innovation, and professional skills.
+            </p>
+            <p style="margin-top:15px;">
+                Our institute emphasizes hands-on training, real-world problem solving, and updated technology knowledge. 
+                Whether you are a beginner or an advanced learner, Computer House offers a friendly environment to grow.
+            </p>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section id="highlights"><div class="section-title"><h2>Our Highlights</h2></div><div class="services"><div class="service-card"><h3>Smart Labs</h3><p>Fast systems, modern software & practical sessions.</p></div><div class="service-card"><h3>Mobile Learning</h3><p>Notes, practice & support accessible on phones.</p></div><div class="service-card"><h3>Job‑Ready Skills</h3><p>Focused training for real‑world applications.</p></div><div class="service-card"><h3>Mentorship</h3><p>Guidance, doubt sessions & student care.</p></div></div></section>
+
+    <!-- SERVICES -->
+    <section id="services">
+  <div class="section-title"><h2>Our Services & Programs</h2></div>
+  <div class="services">
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" style="width:100%;border-radius:8px;margin-bottom:10px" alt="Computer Basics">
+      <h3>Computer Fundamentals</h3>
+      <p>Basic computer knowledge, operating systems, typing skills, file handling, and internet usage for beginners.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" style="width:100%;border-radius:8px;margin-bottom:10px" alt="Programming">
+      <h3>Programming & Coding</h3>
+      <p>In-depth training in C, C++, Python, HTML, CSS, and JavaScript with real-world coding practice.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e" style="width:100%;border-radius:8px;margin-bottom:10px" alt="Web Development">
+      <h3>Web Development</h3>
+      <p>Website designing using HTML, CSS, JavaScript and basics of responsive and modern web layouts.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04" style="width:100%;border-radius:8px;margin-bottom:10px" alt="Hardware Repair">
+      <h3>Hardware & Maintenance</h3>
+      <p>PC assembly, troubleshooting, laptop repair, printer handling, and system maintenance.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" style="width:100%;border-radius:8px;margin-bottom:10px" alt="Software Support">
+      <h3>Software Solutions</h3>
+      <p>Operating system installation, antivirus setup, software updates, and system optimization.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" style="width:100%;border-radius:8px;margin-bottom:10px" alt="Project Guidance">
+      <h3>Academic Project Guidance</h3>
+      <p>School and college project guidance, documentation help, and viva preparation support.</p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+        <div class="section-title">
+            <h2>Gallery</h2>
+        </div>
+        <div class="gallery"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Coding"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Students"><img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e" alt="Laptop"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" alt="Mobile Technology"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="Classroom"><img src="https://images.unsplash.com/photo-1553877522-43269d4ea984" alt="Technology"></div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why">
+        <div class="section-title">
+            <h2>Why Choose Computer House?</h2>
+        </div>
+        <div class="services">
+            <div class="service-card">
+                <h3>Experienced Faculty</h3>
+                <p>Learn from skilled instructors with strong technical and teaching experience.</p>
+            </div>
+            <div class="service-card">
+                <h3>Practical Learning</h3>
+                <p>Hands-on sessions, live demonstrations, and real-world problem solving.</p>
+            </div>
+            <div class="service-card">
+                <h3>Affordable Fees</h3>
+                <p>Quality education and services at student-friendly prices.</p>
+            </div>
+            <div class="service-card">
+                <h3>Career Support</h3>
+                <p>Guidance for internships, projects, and technical career paths.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="contact">
+            <form onsubmit="return submitForm()">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Computer House | Designed for Academic Project</p>
+    </footer>
+
+    <script>
+        function submitForm(){
+            let name = document.getElementById('name').value;
+            alert("Thank you, " + name + "! Your message has been submitted successfully.");
+            return false; // Prevent actual form submission
+        }
+    </script>
+
+</body>
+</html>
